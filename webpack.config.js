@@ -25,6 +25,11 @@ module.exports = {
                     }
                 }
             }
-        ]
+        ],
+        loaders: [{
+            test: /\.scss$/,
+            //  loader 是有順序的，應用模式是由右到左 .scss 檔案，然後是 css loader，最後是 style loader。
+            loaders: ["style", "css", "sass"]
+          }]
     }
 };
