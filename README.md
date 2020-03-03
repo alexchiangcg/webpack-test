@@ -19,3 +19,7 @@
         "watch": "webpack --mode development --watch",
         "start": "webpack --mode development"
       }
+
+### 安裝 sass loader
+    npm install --save-dev sass-loader node-sass webpack
+    
